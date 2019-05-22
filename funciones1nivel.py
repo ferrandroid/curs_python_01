@@ -12,6 +12,9 @@ def normal(x):
 def cuadrado(x):
     return x*x
 
+def cubo(x):
+    return x**3
+
 # El segon paràmetre recupera la funció
 def sumaTodos(limitTo, f):
     resultado = 0
@@ -20,5 +23,9 @@ def sumaTodos(limitTo, f):
         
     return resultado
 
-print (sumaTodos(3, normal))
-print (sumaTodos(3, cuadrado))
+''' Només s'executarà si el fitxer funciona com
+    a mòdul principal : __name__ = __main__
+    però no si s'executa com a mòdul d'un altre '''
+if __name__ == '__main__':
+    print (sumaTodos(3, normal))
+    print (sumaTodos(3, cuadrado))

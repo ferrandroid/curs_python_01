@@ -1,5 +1,6 @@
+# FUNCIONS DE PRIMER NIVELL
 
-
+##################################################################
 ''' Funció que troba el valor màxim dins d'un array
     la notació *l converteix el paràmetre en un array
     de longitud a concretar '''
@@ -17,6 +18,7 @@ def valorMax(*l):
             
     return maxim
 
+##################################################################
 ''' Funció que troba el valor mínim dins d'un array
     la notació *l converteix el paràmetre en un array
     de longitud a concretar '''
@@ -35,6 +37,7 @@ def valorMin(*l):
             
     return minim
 
+##################################################################
 ''' Funció que troba la mitjana aritmètica dins d'un array
     la notació *l converteix el paràmetre en un array
     de longitud a concretar '''
@@ -50,6 +53,7 @@ def media(*l):
         
     return suma/len(l)
 
+##################################################################
 funcions = {
     'max' : valorMax,
     'min' : valorMin,
